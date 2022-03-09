@@ -303,7 +303,7 @@ void AdaptationMap::perform_adaptation(SensorData* sensors, ProfileGearChange ch
                 this->adapt_data[adaptation_idx].offset_accel_idle -= 25; // +2.5% pressure
             } else {
                 //this->adapt_data[adaptation_idx].offset_decel_idle -= 5; // +0.5% pressure
-                this->adapt_data[adaptation_idx].offset_decel_idle -= 10; // +1% pressure
+                this->adapt_data[adaptation_idx].offset_decel_idle -= 20; // +2% pressure
             }
         } else {
             if (accel_shift) {
