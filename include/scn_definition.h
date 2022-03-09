@@ -203,7 +203,7 @@
 // #define SCN_VARIANT_NAME BD41 // 211.261 with config 'S211 M112 E26 LST USA without M-Prog Rear diff ratio=3.670'
 // #define SCN_VARIANT_NAME BD42 // 211.261 with config 'S211 M112 E26 with LST Rear diff ratio=3.670'
 // #define SCN_VARIANT_NAME BDK2 // 211.261 with config 'S211 M112 E26 Taiwan with LST Rear diff ratio=3.670'
-// #define SCN_VARIANT_NAME BF40 // 211.265 with config 'S211 M112 E32 not Taiwan Rear diff ratio=3.070'
+ #define SCN_VARIANT_NAME BF40 // 211.265 with config 'S211 M112 E32 not Taiwan Rear diff ratio=3.070'
 // #define SCN_VARIANT_NAME BFK0 // 211.265 with config 'S211 M112 E32 Taiwan Rear diff ratio=3.070'
 // #define SCN_VARIANT_NAME BF41 // 211.265 with config 'S211 M112 E32 with LST without M-Prog USA Rear diff ratio=3.070'
 // #define SCN_VARIANT_NAME BF42 // 211.265 with config 'S211 M112 E32 with LST with M-Prog not Taiwan/USA Rear diff ratio=3.070'
