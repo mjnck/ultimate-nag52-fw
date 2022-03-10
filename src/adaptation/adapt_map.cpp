@@ -299,15 +299,19 @@ void AdaptationMap::perform_adaptation(SensorData* sensors, ProfileGearChange ch
     if ((upshift && response.max_d_rpm > 50) || (!upshift && response.min_d_rpm < -30)) { // Flaring, increase bite force
         if (idle_shift) {
             if (accel_shift) {
-                this->adapt_data[adaptation_idx].offset_accel_idle -= 5; // +0.5% pressure
+                //this->adapt_data[adaptation_idx].offset_accel_idle -= 5; // +0.5% pressure
+                this->adapt_data[adaptation_idx].offset_accel_idle -= 25; // +2.5% pressure
             } else {
-                this->adapt_data[adaptation_idx].offset_decel_idle -= 5; // +0.5% pressure
+                //this->adapt_data[adaptation_idx].offset_decel_idle -= 5; // +0.5% pressure
+                this->adapt_data[adaptation_idx].offset_decel_idle -= 50; // +5% pressure
             }
         } else {
             if (accel_shift) {
-                this->adapt_data[adaptation_idx].offset_accel_load -= 10; // +1% pressure
+                //this->adapt_data[adaptation_idx].offset_accel_load -= 10; // +1% pressure
+                this->adapt_data[adaptation_idx].offset_accel_load -= 50; // +5% pressure
             } else {
-                this->adapt_data[adaptation_idx].offset_decel_load -= 10; // +1% pressure
+                //this->adapt_data[adaptation_idx].offset_decel_load -= 10; // +1% pressure
+                this->adapt_data[adaptation_idx].offset_decel_load -= 20; // +2% pressure
             }
         }
     } else if (abs(response.avg_d_rpm) > response.target_d_rpm*1.2) { // Didn't flare but shift was too quick
