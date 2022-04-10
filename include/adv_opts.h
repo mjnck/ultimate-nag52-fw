@@ -21,7 +21,7 @@
  * 
  * Default: Disabled
  */
-#define BLUE_SOLENOIDS 1
+#define BLUE_SOLENOIDS 0
 
 
 #define SPC_RAMP_ALGO_LINEAR // Linear pressure ramp from start to end
